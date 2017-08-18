@@ -67,7 +67,7 @@ int main(int argc, const char * argv[]) {
         
         /////////////////////////////////////////////////////////////////////
         // 3. Numberize
-        char inputStrNumber[10];
+        char inputStrNumber[100];
         printf("Enter your number: ");
         scanf("%s", inputStrNumber);                    // read and format into the str buffer
         printf("Your Numbers are %s\n", inputStrNumber);    // print buffer
@@ -80,6 +80,54 @@ int main(int argc, const char * argv[]) {
         
         int value = [inputNumber intValue];
         NSLog(@"Your Number %d is Integer not String.", value);
+        NSLog(@"%d + 10 = %d",value, value+10);
+        
+        NSLog(@"-------------------------------------------");
+        
+        
+        /////////////////////////////////////////////////////////////////////
+        // 4. Canadianize
+        char inputChars2[1000];
+        
+        printf("Input a string: ");
+        
+        scanf("%s", inputChars2);
+        
+        NSString *inputString2 = [NSString stringWithUTF8String:inputChars2];
+        NSMutableString *string = [NSMutableString stringWithString:inputString2];
+        [string appendString:@",eh?"];
+        
+        NSLog(@"%@",string);
+        
+
+        NSLog(@"-------------------------------------------");
+        
+        
+        /////////////////////////////////////////////////////////////////////
+        // 5. Respond
+        char inputChars3[1000];
+        
+        printf("Input a string: ");
+        
+        scanf("%s", inputChars3);
+        
+        NSString *inputString3 = [NSString stringWithUTF8String:inputChars3];
+        BOOL blq = [inputString3 hasSuffix:@"?"];
+        BOOL ble = [inputString3 hasSuffix:@"!"];
+        
+        if(blq == YES){
+            NSLog(@"I don\'t know.");
+        } else if(ble == YES){
+            NSLog(@"calm down.");
+        } else {
+            NSLog(@"not ! or ?");
+        }
+        
+        NSLog(@"-------------------------------------------");
+        
+        
+        /////////////////////////////////////////////////////////////////////
+        // 6. De-Space-It
 
         
         
