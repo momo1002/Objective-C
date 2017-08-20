@@ -14,7 +14,9 @@
 @property (nonatomic,assign) float width;
 @property (nonatomic,assign) float length;
 
-- (instancetype)initWithHeight:(float) h Width:(float) w Length:(float) l;
+- (instancetype)initWithHeight:(float) h
+                         Width:(float) w
+                        Length:(float) l;
 - (float) getVolume;
 - (float) ratioToAnotherBox: (Box *) box1 AndSomeBox: (Box *) box2;
 
