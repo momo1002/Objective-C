@@ -64,10 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				FADD4CC91F475B500097B783 /* main.m */,
-				FADD4CD01F475B6A0097B783 /* Student.h */,
-				FADD4CD11F475B6A0097B783 /* Student.m */,
 				FADD4CD31F4772880097B783 /* Box.h */,
 				FADD4CD41F4772880097B783 /* Box.m */,
+				FADD4CD01F475B6A0097B783 /* Student.h */,
+				FADD4CD11F475B6A0097B783 /* Student.m */,
 			);
 			path = Assignment2;
 			sourceTree = "<group>";
@@ -260,6 +260,7 @@
 				FADD4CCF1F475B500097B783 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

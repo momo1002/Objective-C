@@ -16,6 +16,6 @@
 
 - (instancetype)initWithHeight:(float) h Width:(float) w Length:(float) l;
 - (float) getVolume;
-- (float) ratioToAnotherBox: (Box *) box;
+- (float) ratioToAnotherBox: (Box *) box1 AndSomeBox: (Box *) box2;
 
 @end
