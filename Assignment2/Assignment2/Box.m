@@ -8,13 +8,14 @@
 
 #import "Box.h"
 
-@implementation Box {
-    float _height;
-    float _width;
-    float _length;
-}
+@implementation Box
+//{
+//    float _height;
+//    float _width;
+//    float _length;
+//}
 
-- (instancetype)initWith:(float) h: (float) w :(float) l; {
+- (instancetype)initWithHeight:(float) h Width:(float) w Length:(float) l {
     self = [super init];
     if (self) {
         _height = h;
@@ -30,8 +31,9 @@
 }
 
 // class method【 + 】
-+ (float) rationToAnotherBox: (Box *) box1 AndSomeBox: (Box *) box2 {
+- (float) ratioToAnotherBox: (Box *) box1 AndSomeBox: (Box *) box2 {
     return box1.getVolume / box2.getVolume;
 }
+
 
 @end
