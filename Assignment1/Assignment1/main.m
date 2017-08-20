@@ -128,6 +128,11 @@ int main(int argc, const char * argv[]) {
         
         /////////////////////////////////////////////////////////////////////
         // 6. De-Space-It
+        NSString *hoge = @"Hello world :)";
+        [hoge stringByReplacingOccurrencesOfString: @" " withString: @"-"];
+        NSLog(@"%@", hoge);
+        
+        NSLog(@"-------------------------------------------");
 
         
         
