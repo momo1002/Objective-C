@@ -30,10 +30,12 @@
     return _height * _width * _length;
 }
 
-// class method【 + 】
 - (float) ratioToAnotherBox: (Box *) box1 AndSomeBox: (Box *) box2 {
     return box1.getVolume / box2.getVolume;
 }
+
+
+// class method【 + 】 like "static" in Java
 
 
 @end
