@@ -9,6 +9,7 @@
 #import "InputHandler.h"
 
 @implementation InputHandler
+
 + (NSString *) getUserInput {
     char buffer[256];
     fgets(buffer ,256, stdin);

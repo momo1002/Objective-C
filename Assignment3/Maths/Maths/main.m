@@ -8,29 +8,24 @@
 
 #import <Foundation/Foundation.h>
 #import "InputHandler.h"
+#import "AdditionQuestion.h"
 
-int main(int argc, const char * argv[]) {    
+int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        NSInteger int1, int2;
-        int1 = ((int) arc4random()) % 100;
-        int2 = ((int) arc4random()) % 100;
         NSLog(@"Math!");
+        BOOL boolean = YES;
         
-        NSInteger resultAdd = int1 + int2;
-        NSLog(@"%ld + %ld = ", int1, int2);
-        
-        NSLog(@"Enter your answer...");
-        
-        
-        NSString *input = [InputHandler getUserInput];
-        NSInteger inputInt = input.integerValue;
-        
-        if(inputInt == resultAdd){
-            NSLog(@"Right");
-        } else {
-            NSLog(@"....No");
+        while (boolean) {
+            AdditionQuestion *aq = [[AdditionQuestion alloc]init];
+            NSInteger resultAdd = [aq getRandomNumbers];
+            
+            NSLog(@"Enter your answer...");
+            NSString *inputStr = [InputHandler getUserInput];
+            
+            NSInteger inputInt = inputStr.integerValue;
+            boolean = [aq check: (int)inputInt : (int) resultAdd];
+
         }
-        
     }
     return 0;
 }
