@@ -12,5 +12,8 @@
 
 @property (nonatomic,assign) NSString* _name;
 @property (nonatomic,assign) NSString* _email;
+@property (nonatomic,assign) NSMutableArray* _phone;
+
+-(instancetype)initWithName:(NSString*) name AndWithEmail:(NSString*) email;
 
 @end

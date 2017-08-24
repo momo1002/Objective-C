@@ -10,4 +10,15 @@
 
 @implementation Contact
 
+- (instancetype)initWithName:(NSString*) name AndWithEmail:(NSString*) email
+{
+    self = [super init];
+    if (self) {
+        _name = name;
+        _email = email;
+        _phones = [NSMutableArray array];
+    }
+    return self;
+}
+
 @end

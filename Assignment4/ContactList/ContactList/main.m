@@ -21,9 +21,6 @@ int main(int argc, const char * argv[]) {
         
         NSString *input = [ih getUserInput];
         
-        
-        
-        
     }
     return 0;
 }
