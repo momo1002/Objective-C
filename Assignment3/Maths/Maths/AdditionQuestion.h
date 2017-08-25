@@ -10,9 +10,13 @@
 
 @interface AdditionQuestion : NSObject
 
-@property int resultAdd;
+@property (nonatomic) NSString *question;
+@property (assign) NSInteger answer;
+@property (assign) NSInteger num1;
+@property (assign) NSInteger num2;
 
-- (int) getRandomNumbers;
-- (BOOL) check: (int) userInput : (int) resultAdd;
+
+- (instancetype) init;
+- (BOOL) isCorrect: (NSString *) userAnswer;
 
 @end

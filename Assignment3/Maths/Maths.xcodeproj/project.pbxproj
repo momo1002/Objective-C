@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA0D92411F4F5C060043E466 /* ScoreKeeper.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0D92401F4F5C060043E466 /* ScoreKeeper.m */; };
 		FABFC07A1F4B46A600827412 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FABFC0791F4B46A600827412 /* main.m */; };
 		FABFC0851F4B63C600827412 /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = FABFC0841F4B63C600827412 /* InputHandler.m */; };
 		FABFC0881F4B6A6700827412 /* AdditionQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = FABFC0871F4B6A6700827412 /* AdditionQuestion.m */; };
@@ -25,6 +26,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FA0D923F1F4F5C060043E466 /* ScoreKeeper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScoreKeeper.h; sourceTree = "<group>"; };
+		FA0D92401F4F5C060043E466 /* ScoreKeeper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScoreKeeper.m; sourceTree = "<group>"; };
 		FABFC0761F4B46A600827412 /* Maths */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Maths; sourceTree = BUILT_PRODUCTS_DIR; };
 		FABFC0791F4B46A600827412 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FABFC0831F4B63C600827412 /* InputHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputHandler.h; sourceTree = "<group>"; };
@@ -68,6 +71,8 @@
 				FABFC0841F4B63C600827412 /* InputHandler.m */,
 				FABFC0861F4B6A6700827412 /* AdditionQuestion.h */,
 				FABFC0871F4B6A6700827412 /* AdditionQuestion.m */,
+				FA0D923F1F4F5C060043E466 /* ScoreKeeper.h */,
+				FA0D92401F4F5C060043E466 /* ScoreKeeper.m */,
 			);
 			path = Maths;
 			sourceTree = "<group>";
@@ -129,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA0D92411F4F5C060043E466 /* ScoreKeeper.m in Sources */,
 				FABFC0881F4B6A6700827412 /* AdditionQuestion.m in Sources */,
 				FABFC07A1F4B46A600827412 /* main.m in Sources */,
 				FABFC0851F4B63C600827412 /* InputHandler.m in Sources */,
@@ -260,6 +266,7 @@
 				FABFC07F1F4B46A600827412 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
